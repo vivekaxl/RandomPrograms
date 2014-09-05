@@ -1,7 +1,7 @@
 public class ClosestNumber {
 	int start,end;
 	int BinarySearch(int[] numbers, int start, int end, int key){
-		System.out.println(start + " , " + end);
+		//System.out.println(start + " , " + end);
 		int position = (start+end)/2;
 		if(start+1 < end){
 			if(numbers[position] == key)
@@ -18,7 +18,7 @@ public class ClosestNumber {
     int closestNumber(int[] numbers, int key){
     	int temp= BinarySearch(numbers,0,numbers.length-1,key) ;
     	if(temp < 0){
-    		System.out.println(this.start + " " + this.end);
+    		//System.out.println(this.start + " " + this.end);
     		if(key<numbers[this.start])
     			return this.start;
     		else if(key>numbers[this.end])
